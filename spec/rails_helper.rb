@@ -34,6 +34,13 @@ RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
+  config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    origins '*'
+    resource '*', headers: :any, methods: :any
+    end
+  end
+
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
@@ -66,4 +73,4 @@ Shoulda::Matchers.configure do |config|
 
     with.library :rails
   end
-end 
+end
