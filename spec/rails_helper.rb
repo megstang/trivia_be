@@ -35,9 +35,9 @@ RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
   config.middleware.insert_before 0, Rack::Cors do
-  allow do
-    origins '*'
-    resource '*', headers: :any, methods: :any
+    allow do
+      origins '*'
+      resource '*', headers: :any, methods: :any
     end
   end
 
