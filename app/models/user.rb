@@ -14,6 +14,6 @@ class User < ApplicationRecord
   end
 
   def set_score
-    self.score = 0
+    self[:score] = 0
   end
 end
