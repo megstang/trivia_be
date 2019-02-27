@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Get Score endpoint" do
+RSpec.describe "Post Game endpoint" do
   before(:each) do
     data_register = {
       "name": "meg",
@@ -13,17 +13,18 @@ RSpec.describe "Get Score endpoint" do
     @token = JSON.parse(response.body)["data"]["attributes"]["session_token"]
   end
 
-  it "can get score from get api/v1/score" do
-
-    data_score = {
-      "session_token": @token
+  it "saves a new game for the user" do
+    data_save_game = {
+      "session_token": @token,
+      "category": "Science: Math",
+      "correct": 3,
+      "num_questions": 10
     }
 
-    get "/api/v1/score", params: data_score
-
-    score = JSON.parse(response.body)["score"]
+    post "/api/v1/games", params: data_save_game
     expect(response.status).to eq(200)
-    expect(score).to eq(0)
   end
+
+
 
 end

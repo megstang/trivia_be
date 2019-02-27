@@ -104,11 +104,11 @@
         null,
         null,
         1,
-        2,
-        2,
+        1,
+        1,
         1,
         null,
-        1,
+        0,
         null,
         null,
         null,
@@ -138,6 +138,39 @@
         null,
         null
       ],
+      "/Users/meghanstang/turing/4module/projects/trivia_backend/app/controllers/api/v1/games_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        4,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/meghanstang/turing/4module/projects/trivia_backend/app/serializers/game_serializer.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/meghanstang/turing/4module/projects/trivia_backend/app/mailers/application_mailer.rb": [
 
       ],
@@ -158,6 +191,6 @@
         0
       ]
     },
-    "timestamp": 1551253596
+    "timestamp": 1551254820
   }
 }
