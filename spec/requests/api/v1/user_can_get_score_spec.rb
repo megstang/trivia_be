@@ -32,11 +32,9 @@ RSpec.describe "Get Score endpoint" do
       "session_token": @token
     }
 
-    get "/api/v1/score", params: data_score
+    get "/api/v1/score", params:
 
-    score = JSON.parse(response.body)["score"]
-    expect(response.status).to eq(200)
-    expect(score).to eq(0)
+    expect(response.status).to eq(404)
   end
 
 

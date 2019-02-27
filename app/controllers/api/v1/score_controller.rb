@@ -10,7 +10,7 @@ class Api::V1::ScoreController < ApplicationController
 
   def show
     user = User.find_by(session_token: params[:session_token])
-    if user.save
+    if user != nil && user.save
       render :json => {:score => user.score}.to_json, :status => 200
     else
       render :json => {:error => "Cannot find user with this session token"}.to_json, :status =>404
