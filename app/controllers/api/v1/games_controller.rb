@@ -4,7 +4,8 @@ class Api::V1::GamesController<ApplicationController
     user = User.find_by(session_token: user_params[:session_token])
     if user!= nil && user.save
       Game.create(game_params(user))
-      render :json => {:success => "Game Saved!"}.to_json, :status => 200
+      render json: GameSerializer.new(user.games)
+      # render :json => {:success => "Game Saved!"}.to_json, :status => 200
     else
       render :json => {:error => "Game unable to be saved."}.to_json, :status => 400
     end
