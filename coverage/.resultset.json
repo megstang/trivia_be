@@ -29,11 +29,11 @@
         1,
         null,
         1,
-        4,
+        6,
         null,
         null,
         1,
-        4,
+        6,
         null,
         null
       ],
@@ -41,9 +41,9 @@
         1,
         null,
         1,
-        5,
-        5,
-        4,
+        7,
+        7,
+        6,
         null,
         1,
         null,
@@ -52,11 +52,11 @@
         1,
         null,
         1,
-        4,
+        6,
         null,
         null,
         1,
-        5,
+        7,
         null,
         null,
         null
@@ -69,20 +69,20 @@
         1,
         null,
         1,
-        4,
+        6,
         null,
         null,
         1,
         null,
         1,
-        4,
-        4,
-        4,
+        6,
+        6,
+        6,
         null,
         null,
         null,
         1,
-        4,
+        6,
         null,
         null
       ],
@@ -90,6 +90,28 @@
         1,
         1,
         1,
+        null
+      ],
+      "/Users/meghanstang/turing/4module/projects/trivia_backend/app/controllers/api/v1/score_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        2,
+        2,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/meghanstang/turing/4module/projects/trivia_backend/app/controllers/api/v1/sessions_controller.rb": [
@@ -116,19 +138,6 @@
         null,
         null
       ],
-      "/Users/meghanstang/turing/4module/projects/trivia_backend/app/controllers/api/v1/score_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
       "/Users/meghanstang/turing/4module/projects/trivia_backend/app/mailers/application_mailer.rb": [
 
       ],
@@ -149,6 +158,6 @@
         0
       ]
     },
-    "timestamp": 1551252242
+    "timestamp": 1551253596
   }
 }

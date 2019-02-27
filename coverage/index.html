@@ -14,26 +14,26 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-27T00:24:02-07:00">2019-02-27T00:24:02-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-27T00:46:36-07:00">2019-02-27T00:46:36-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">85.92%</span></span>
+    (<span class="covered_percent"><span class="yellow">86.84%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.5
+         1.8
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>13</b> files in total.
-    <b>71</b> relevant lines. 
-    <span class="green"><b>61</b> lines covered</span> and
+    <b>76</b> relevant lines. 
+    <span class="green"><b>66</b> lines covered</span> and
     <span class="red"><b>10</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -73,11 +73,11 @@
       <tr>
         <td class="strong"><a href="#8b40f534ffcc8aaa750d68ae9f15b580ca44335b" class="src_link" title="app/controllers/api/v1/score_controller.rb">app/controllers/api/v1/score_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>20</td>
         <td>11</td>
-        <td>6</td>
-        <td>6</td>
+        <td>11</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -97,7 +97,7 @@
         <td>11</td>
         <td>11</td>
         <td>0</td>
-        <td>2.6</td>
+        <td>3.5</td>
       </tr>
       
       <tr>
@@ -157,7 +157,7 @@
         <td>12</td>
         <td>12</td>
         <td>0</td>
-        <td>1.5</td>
+        <td>1.8</td>
       </tr>
       
       <tr>
@@ -177,7 +177,7 @@
         <td>10</td>
         <td>10</td>
         <td>0</td>
-        <td>2.5</td>
+        <td>3.5</td>
       </tr>
       
     </tbody>
@@ -193,15 +193,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.83
+         2.07
        </span>
     </span> hits/line)
   </h2>
   <a name="Controllers"></a>
   <div>
     <b>4</b> files in total.
-    <b>29</b> relevant lines. 
-    <span class="green"><b>29</b> lines covered</span> and
+    <b>34</b> relevant lines. 
+    <span class="green"><b>34</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -221,11 +221,11 @@
       <tr>
         <td class="strong"><a href="#8b40f534ffcc8aaa750d68ae9f15b580ca44335b" class="src_link" title="app/controllers/api/v1/score_controller.rb">app/controllers/api/v1/score_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>20</td>
         <td>11</td>
-        <td>6</td>
-        <td>6</td>
+        <td>11</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -245,7 +245,7 @@
         <td>11</td>
         <td>11</td>
         <td>0</td>
-        <td>2.6</td>
+        <td>3.5</td>
       </tr>
       
       <tr>
@@ -270,7 +270,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.32
+         1.51
        </span>
     </span> hits/line)
   </h2>
@@ -322,7 +322,7 @@
         <td>12</td>
         <td>12</td>
         <td>0</td>
-        <td>1.5</td>
+        <td>1.8</td>
       </tr>
       
     </tbody>
@@ -505,7 +505,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.33
+         1.81
        </span>
     </span> hits/line)
   </h2>
@@ -567,7 +567,7 @@
         <td>10</td>
         <td>10</td>
         <td>0</td>
-        <td>2.5</td>
+        <td>3.5</td>
       </tr>
       
     </tbody>
@@ -676,8 +676,8 @@
     <h3>app/controllers/api/v1/score_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -745,7 +745,61 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    user = User.find_by(session_token: params[:session_token])</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="13">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    if user != nil &amp;&amp; user.save</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      render :json =&gt; {:score =&gt; user.score}.to_json, :status =&gt; 200</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      render :json =&gt; {:error =&gt; &quot;Cannot find user with this session token&quot;}.to_json, :status =&gt;404</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">end</code>
@@ -939,20 +993,20 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="4">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="7" data-linenumber="4">
+          <span class="hits">7</span>
           
           <code class="ruby">    user = User.create(user_params) if matching_passwords?</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="5">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="7" data-linenumber="5">
+          <span class="hits">7</span>
           
           <code class="ruby">    if user!= nil &amp;&amp; user.save</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="6">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="6">
+          <span class="hits">6</span>
           
           <code class="ruby">      render json: UserSerializer.new(user)</code>
         </li>
@@ -1005,8 +1059,8 @@
           <code class="ruby">  def user_params</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="15">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="15">
+          <span class="hits">6</span>
           
           <code class="ruby">    params.permit(:name, :email, :password, :password_confirmation, :session_token)</code>
         </li>
@@ -1029,8 +1083,8 @@
           <code class="ruby">  def matching_passwords?</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="19">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="7" data-linenumber="19">
+          <span class="hits">7</span>
           
           <code class="ruby">    params[:password] == params[:password_confirmation]</code>
         </li>
@@ -1329,8 +1383,8 @@
           <code class="ruby">  def assign_session_token</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="14">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="14">
+          <span class="hits">6</span>
           
           <code class="ruby">    self.session_token = SessionService.new().get_token</code>
         </li>
@@ -1353,8 +1407,8 @@
           <code class="ruby">  def set_score</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="18">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="18">
+          <span class="hits">6</span>
           
           <code class="ruby">    self[:score] = 0</code>
         </li>
@@ -1451,8 +1505,8 @@
           <code class="ruby">  def get_token</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="4">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="4">
+          <span class="hits">6</span>
           
           <code class="ruby">    get_json(&quot;/api_token.php?command=request&quot;)[:token]</code>
         </li>
@@ -1487,20 +1541,20 @@
           <code class="ruby">  def conn</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="10">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="10">
+          <span class="hits">6</span>
           
           <code class="ruby">    url = &quot;https://opentdb.com&quot;</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="11">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="11">
+          <span class="hits">6</span>
           
           <code class="ruby">    Faraday.new(url: url) do |faraday|</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="12">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="12">
+          <span class="hits">6</span>
           
           <code class="ruby">        faraday.adapter Faraday.default_adapter</code>
         </li>
@@ -1529,8 +1583,8 @@
           <code class="ruby">  def get_json(url)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="17">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="17">
+          <span class="hits">6</span>
           
           <code class="ruby">    JSON.parse(conn.get(url).body, symbolize_names: true)</code>
         </li>

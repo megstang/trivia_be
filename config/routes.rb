@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :users
       resources :sessions
       patch "/score", to: "score#update"
+      get "/score", to: "score#show"
     end
   end
 end
