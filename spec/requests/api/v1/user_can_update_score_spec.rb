@@ -13,7 +13,7 @@ RSpec.describe "Patch Score endpoint" do
     @token = JSON.parse(response.body)["data"]["attributes"]["session_token"]
   end
 
-  it "creates a new user" do
+  it "updates user score" do
     data_score = {
       "session_token": @token,
       "score": 10
