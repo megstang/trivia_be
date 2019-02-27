@@ -26,6 +26,10 @@ group :development, :test do
   gem 'pry'
   gem 'shoulda-matchers'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'vcr'
+  gem 'webmock'
+  gem 'simplecov'
+  gem 'awesome_print'
 end
 
 group :development do
