@@ -1,32 +1,40 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/meghanstang/turing/4module/projects/trivia_backend/app/models/user.rb": [
+      "/Users/meghanstang/turing/4module/projects/trivia_backend/app/models/game.rb": [
         1,
         1,
         1,
         1,
-        null,
         1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        4,
-        null,
-        null,
-        1,
-        4,
         null,
         null
       ],
       "/Users/meghanstang/turing/4module/projects/trivia_backend/app/models/application_record.rb": [
         1,
         1,
+        null
+      ],
+      "/Users/meghanstang/turing/4module/projects/trivia_backend/app/models/user.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        4,
+        null,
+        null,
+        1,
+        4,
+        null,
         null
       ],
       "/Users/meghanstang/turing/4module/projects/trivia_backend/app/controllers/api/v1/users_controller.rb": [
@@ -141,6 +149,6 @@
         0
       ]
     },
-    "timestamp": 1551250537
+    "timestamp": 1551252242
   }
 }

@@ -1,11 +1,10 @@
 class User < ApplicationRecord
+  has_many :games
   has_secure_password
   before_create :assign_session_token
   before_create :set_score
 
   validates_presence_of :name
-  # validates_presence_of :score
-  # validates_presence_of :session_token
 
   validates :email, presence: true, uniqueness: true
 
