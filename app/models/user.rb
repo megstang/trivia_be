@@ -4,8 +4,8 @@ class User < ApplicationRecord
   before_create :set_score
 
   validates_presence_of :name
-  validates_presence_of :score
-  validates_presence_of :session_token
+  # validates_presence_of :score
+  # validates_presence_of :session_token
 
   validates :email, presence: true, uniqueness: true
 
