@@ -22,12 +22,12 @@ class Api::V1::GamesController<ApplicationController
   private
 
   def user_params
-    params.permit(:session_token,:category,:correct,:num_questions)
+    params.permit(:session_token,:category,:correct,:num_questions, :difficulty)
   end
 
   def game_params(user)
     user_id = user.id
-    return {user_id: user_id, category: user_params[:category], num_questions: user_params[:num_questions], correct: user_params[:correct] }
+    return {user_id: user_id, category: user_params[:category], num_questions: user_params[:num_questions], correct: user_params[:correct], difficulty: user_params[:difficulty] }
   end
 
 end
