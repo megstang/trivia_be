@@ -147,6 +147,7 @@
         1,
         1,
         null,
+        null,
         0,
         null,
         null,
@@ -162,6 +163,12 @@
         1,
         null,
         null,
+        null
+      ],
+      "/Users/meghanstang/turing/4module/projects/trivia_backend/app/serializers/game_serializer.rb": [
+        1,
+        1,
+        1,
         null
       ],
       "/Users/meghanstang/turing/4module/projects/trivia_backend/app/mailers/application_mailer.rb": [
@@ -184,6 +191,6 @@
         0
       ]
     },
-    "timestamp": 1551254515
+    "timestamp": 1551254820
   }
 }
