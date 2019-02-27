@@ -14,6 +14,7 @@ gem 'httparty'
 gem 'fast_jsonapi'
 gem 'nokogiri'
 gem 'rack-cors', require: 'rack/cors'
+gem 'travis'
 
 
 

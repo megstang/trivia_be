@@ -46,6 +46,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     arel (9.0.0)
     awesome_print (1.8.0)
+    backports (3.12.0)
     bcrypt (3.1.12)
     bcrypt-ruby (3.1.5)
       bcrypt (>= 3.1.3)
@@ -63,22 +64,35 @@ GEM
       xpath (~> 3.2)
     coderay (1.1.2)
     concurrent-ruby (1.1.4)
+    connection_pool (2.2.2)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     crass (1.0.4)
     diff-lcs (1.3)
     docile (1.3.1)
     erubi (1.8.0)
+    ethon (0.12.0)
+      ffi (>= 1.3.0)
     faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.13.1)
+      faraday (>= 0.7.4, < 1.0)
     fast_jsonapi (1.5)
       activesupport (>= 4.2)
     ffi (1.10.0)
     figaro (1.1.1)
       thor (~> 0.14)
+    gh (0.14.0)
+      addressable
+      backports
+      faraday (~> 0.8)
+      multi_json (~> 1.0)
+      net-http-persistent (>= 2.7)
+      net-http-pipeline
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     hashdiff (0.3.8)
+    highline (1.7.10)
     httparty (0.16.4)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
@@ -107,8 +121,12 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     msgpack (1.2.6)
+    multi_json (1.13.1)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
+    net-http-persistent (3.0.0)
+      connection_pool (~> 2.2)
+    net-http-pipeline (1.0.1)
     nio4r (2.3.1)
     nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
@@ -118,6 +136,9 @@ GEM
       method_source (~> 0.9.0)
     public_suffix (3.0.3)
     puma (3.12.0)
+    pusher-client (0.6.2)
+      json
+      websocket (~> 1.0)
     rack (2.0.6)
     rack-cors (1.0.2)
     rack-test (1.1.0)
@@ -186,6 +207,17 @@ GEM
       sprockets (>= 3.0.0)
     thor (0.20.3)
     thread_safe (0.3.6)
+    travis (1.8.9)
+      backports
+      faraday (~> 0.9)
+      faraday_middleware (~> 0.9, >= 0.9.1)
+      gh (~> 0.13)
+      highline (~> 1.6)
+      launchy (~> 2.1)
+      pusher-client (~> 0.4)
+      typhoeus (~> 0.6, >= 0.6.8)
+    typhoeus (0.8.0)
+      ethon (>= 0.8.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     vcr (4.0.0)
@@ -193,6 +225,7 @@ GEM
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
+    websocket (1.2.8)
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
@@ -223,6 +256,7 @@ DEPENDENCIES
   rspec-rails
   shoulda-matchers
   simplecov
+  travis
   tzinfo-data
   vcr
   webmock
