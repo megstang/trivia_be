@@ -14,28 +14,25 @@ RSpec.describe "Post Game endpoint" do
   end
 
   it "saves a new game for the user" do
-    data_save_game = {
-      "session_token": @token,
-      "category": "Science: Math",
-      "correct": 3,
-      "num_questions": 10
+    data_get_game = {
+      "session_token": @token
     }
 
-    post "/api/v1/games", params: data_save_game
+    get "/api/v1/games", params: data_get_game
     expect(response.status).to eq(200)
   end
 
-  it "throws 400 error if not created" do
-    data = {
-      "name": "meg",
-      "email": "mstang15@gmail.com",
-      "password": "pasord",
-      "password_confirmation": "password"
+  it "saves a new game for the user" do
+    data_get_game = {
+      "session_token": "123"
     }
 
-    post "/api/v1/users", params: data
+    get "/api/v1/games", params: data_get_game
+    error_message = JSON.parse(response.body)["error"]
     expect(response.status).to eq(400)
+    expect(error_message).to eq("No user found with this session token")
   end
+
 
 
 end
