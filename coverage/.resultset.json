@@ -29,6 +29,34 @@
         1,
         null
       ],
+      "/Users/meghanstang/turing/4module/projects/trivia_backend/app/controllers/api/v1/users_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        0,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/meghanstang/turing/4module/projects/trivia_backend/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
       "/Users/meghanstang/turing/4module/projects/trivia_backend/app/mailers/application_mailer.rb": [
         0,
         0,
@@ -45,10 +73,6 @@
         0,
         0
       ],
-      "/Users/meghanstang/turing/4module/projects/trivia_backend/app/controllers/application_controller.rb": [
-        0,
-        0
-      ],
       "/Users/meghanstang/turing/4module/projects/trivia_backend/app/controllers/api/v1/score_controller.rb": [
         0,
         null,
@@ -56,30 +80,6 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        null,
-        0
-      ],
-      "/Users/meghanstang/turing/4module/projects/trivia_backend/app/controllers/api/v1/users_controller.rb": [
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        0,
-        0,
-        0,
-        null,
         0,
         0,
         0,
@@ -144,6 +144,6 @@
         0
       ]
     },
-    "timestamp": 1551244217
+    "timestamp": 1551248587
   }
 }
