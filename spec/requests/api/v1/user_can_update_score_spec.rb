@@ -23,4 +23,5 @@ RSpec.describe "Patch Score endpoint" do
     expect(response.status).to eq(204)
   end
 
+
 end
