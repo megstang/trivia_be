@@ -10,6 +10,15 @@ class Api::V1::GamesController<ApplicationController
     end
   end
 
+  def index
+    user = User.find_by(session_token: user_params[:session_token])
+    if user!= nil && user.save
+      render json: GameSerializer.new(user.games)
+    else
+      render :json => {:error => "No user found with this session token"}.to_json, :status => 400
+    end
+  end
+
   private
 
   def user_params
