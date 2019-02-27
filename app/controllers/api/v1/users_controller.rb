@@ -10,7 +10,7 @@ class Api::V1::UsersController<ApplicationController
   end
 
   def index
-    render json: UserSerializer.new(User.all)
+    render json: UserSerializer.new(User.order(score: 'DESC'))
   end
 
   private
